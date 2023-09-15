@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hi</h1>
+    <script>
+        console.log("-----------------------------------1");
+        let str = "";
+        for(let i=20; i<=30; i+=0.5){
+            str+= i + " ";
+        }
+        console.log(str);
+
+        console.log("-----------------------------------2");
+        const doll = 27;
+        for(let i=10; i<=100; i+=10){
+            console.log(i*doll);
+        }
+
+        console.log("-----------------------------------3");
+        const n = 45;
+        for( let i=1; i<=100; i++){
+            if(i*i<=n){
+                console.log(i);
+            }
+        }
+
+        console.log("-----------------------------------4");
+        const num = 11;
+        let isPrimeNum = true;
+        if(num>1){
+            for(let i=2; i<num; i++){
+                if(num%i===0){
+                    isPrimeNum= false; break;
+                }
+            }
+        }
+        else{ isPrimeNum= false; }
+        console.log(num.toString() + " " + (isPrimeNum ? "просте число" : "не просте число"));
+
+        console.log("-----------------------------------5");
+        let resNumber = number = 27;
+        while (number > 2 && number % 3 === 0) {
+            number /= 3;
+        }
+        let res = number===1 ? `${resNumber} можна отримати зведенням числа 3 у деякий ступінь` 
+        : `${resNumber} не можна отримати зведенням числа 3 у деякий ступінь`;
+        console.log(res);
+        
+    </script>
+</body>
+</html>
